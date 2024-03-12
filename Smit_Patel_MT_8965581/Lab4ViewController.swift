@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class Lab4ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
