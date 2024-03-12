@@ -9,9 +9,10 @@ import UIKit
 
 class Lab4ViewController: UIViewController {
 
+    //This lab does not contain any view controller code.
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
 

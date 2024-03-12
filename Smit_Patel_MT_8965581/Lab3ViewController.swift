@@ -16,12 +16,14 @@ class Lab3ViewController: UIViewController {
     @IBOutlet weak var displayBox: UITextView!
     @IBOutlet weak var labelFeedback: UILabel!
     
+    //Set data according input into display box.
     @IBAction func btnAdd(_ sender: Any) {
         
         displayBox.text = "Full Name : \(firstName.text!) \(lastName.text!) \nCountry : \(country.text!)\nAge : \(age.text!)"
         
     }
     
+    //check validation and print info in feedback.
     @IBAction func btnSubmit(_ sender: Any) {
     
         if( firstName.text!.isEmpty || lastName.text!.isEmpty || country.text!.isEmpty || age.text!.isEmpty ){
@@ -32,6 +34,7 @@ class Lab3ViewController: UIViewController {
             
     }
     
+    //clear the textfields and displaybox text.
     @IBAction func btnClear(_ sender: Any) {
         
         firstName.text!.removeAll()

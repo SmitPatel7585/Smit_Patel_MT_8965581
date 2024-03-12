@@ -9,10 +9,14 @@ import UIKit
 
 class CanadaCitiesViewController: UIViewController {
         
+    
+        //declaring outlets from screen
         @IBOutlet weak var countryInput: UITextField!
         @IBOutlet weak var invisibleErrorLabel: UILabel!
         @IBOutlet weak var cityImage: UIImageView!
         
+    
+        //search city according input and present image according the input
         @IBAction func findMyCity(_ sender: UIButton) {
             
             if (countryInput.text == nil || countryInput.text!.isEmpty ){
@@ -49,7 +53,6 @@ class CanadaCitiesViewController: UIViewController {
 
         }
         
-        
         //Calls this function when the tap is recognized.
         @objc func dismissKeyboard(){
             //Causes the view (or one of its embedded text fields) to resign the first responder status.
@@ -62,16 +65,7 @@ class CanadaCitiesViewController: UIViewController {
             invisibleErrorLabel.isHidden = true
             
             let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
-
-                      //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
-
-                      tap.cancelsTouchesInView = false
-
-                      view.addGestureRecognizer(tap)
-
-            // Do any additional setup after loading the view.
+            tap.cancelsTouchesInView = false
+            view.addGestureRecognizer(tap)
         }
-    
-
-
 }

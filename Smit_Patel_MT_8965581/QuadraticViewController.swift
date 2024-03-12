@@ -9,11 +9,14 @@ import UIKit
 
 class QuadraticViewController: UIViewController {
 
+        //putlets of textfiels A,B and C.
         @IBOutlet weak var TextFieldA: UITextField!
         @IBOutlet weak var TextFieldB: UITextField!
         @IBOutlet weak var TextFieldC: UITextField!
         @IBOutlet weak var error: UILabel!
 
+    
+        //this function calculate the function code and provide feedback according input.
         @IBAction func result(_ sender: UIButton) {
             guard let a = Double(TextFieldA.text ?? ""),
                   let b = Double(TextFieldB.text ?? ""),
@@ -57,29 +60,34 @@ class QuadraticViewController: UIViewController {
             }
         }
 
+        //clear the feedback from screen.
         @IBAction func clear(_ sender: UIButton) {
             clearTextFields()
             showError("Enter the values for A, B, and C to find X.")
         }
 
+        //print error feedback to the screen.
         func showError(_ message: String) {
             error.textColor = .red
             error.text = message
             error.isHidden = false
         }
 
+        //print the feedback to the screen.
         func showResult(_ message: String) {
             error.textColor = .black
             error.text = message
             error.isHidden = false
         }
 
+        //clear the textfields.
         func clearTextFields() {
             TextFieldA.text = ""
             TextFieldB.text = ""
             TextFieldC.text = ""
         }
 
+        //to dismiss the keyboard
         @objc func dismissKeyboard() {
             view.endEditing(true)
         }

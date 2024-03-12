@@ -526,9 +526,12 @@
                                     <constraint firstAttribute="width" constant="300" id="dFn-pH-Shs"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zmp-YL-AKM">
-                                <rect key="frame" x="180" y="534" width="34" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zmp-YL-AKM">
+                                <rect key="frame" x="71.666666666666686" y="534" width="250" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="BoW-hO-neG"/>
+                                    <constraint firstAttribute="height" constant="42" id="Dgh-iZ-GTd"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -587,10 +590,13 @@
                         <viewLayoutGuide key="safeArea" id="4Gf-BZ-kY4"/>
                         <color key="backgroundColor" red="0.79973718780000003" green="0.83246537519999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Zmp-YL-AKM" firstAttribute="centerX" secondItem="T7u-3T-jKa" secondAttribute="centerX" id="0A4-M1-qfc"/>
                             <constraint firstItem="Wgb-zk-Dy4" firstAttribute="top" secondItem="4Gf-BZ-kY4" secondAttribute="top" constant="23" id="3Ap-KA-pgD"/>
                             <constraint firstItem="zen-VV-Fje" firstAttribute="centerX" secondItem="T7u-3T-jKa" secondAttribute="centerX" id="66l-8p-x55"/>
                             <constraint firstItem="zen-VV-Fje" firstAttribute="leading" secondItem="4Gf-BZ-kY4" secondAttribute="leading" constant="96.670000000000002" id="9bF-Qu-J5h"/>
+                            <constraint firstItem="Zmp-YL-AKM" firstAttribute="top" secondItem="Wgb-zk-Dy4" secondAttribute="bottom" constant="8" id="LKL-mu-0G8"/>
                             <constraint firstItem="Wgb-zk-Dy4" firstAttribute="centerX" secondItem="T7u-3T-jKa" secondAttribute="centerX" id="PQx-iB-J2F"/>
+                            <constraint firstItem="4Gf-BZ-kY4" firstAttribute="bottom" secondItem="Zmp-YL-AKM" secondAttribute="bottom" constant="193" id="fJ3-r8-Vcw"/>
                             <constraint firstItem="Wgb-zk-Dy4" firstAttribute="leading" secondItem="4Gf-BZ-kY4" secondAttribute="leading" constant="46.670000000000002" id="l01-Ib-ql9"/>
                             <constraint firstItem="4Gf-BZ-kY4" firstAttribute="trailing" secondItem="zen-VV-Fje" secondAttribute="trailing" constant="96.329999999999998" id="nwN-HT-W5w"/>
                             <constraint firstItem="4Gf-BZ-kY4" firstAttribute="bottom" secondItem="zen-VV-Fje" secondAttribute="bottom" constant="78" id="sAy-TP-tKl"/>
